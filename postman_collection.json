@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "fcf25157-9d97-44f4-87f9-8c88547b8a97",
+		"name": "projects",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"ae\",\r\n    \"owner\":\"ae2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/projects",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"projects"
+					]
+				},
+				"description": "post"
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3333/projects",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"projects"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "owner",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				},
+				"description": "get"
+			},
+			"response": []
+		},
+		{
+			"name": "put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"modificou\",\r\n    \"owner\":\"modificou\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/projects/96bc4de7-8bd2-4562-acca-82de77b7472a",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"projects",
+						"96bc4de7-8bd2-4562-acca-82de77b7472a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3333/projects/2410c802-0b86-4013-8fdd-c94d259e3a64",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"projects",
+						"2410c802-0b86-4013-8fdd-c94d259e3a64"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
